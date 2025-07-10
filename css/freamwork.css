@@ -160,4 +160,8 @@ font-weight: bold;
 .w-100{
     width: 100%;
 }
+
+.rad-50{
+    border-radius: 50%;
+}
 /* width and heigth end*/

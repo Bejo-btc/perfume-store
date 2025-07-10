@@ -159,6 +159,7 @@ header nav ul li a {
     height: calc(100vh - 50px);
     width: 100%;
     z-index: 5;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -189,6 +190,20 @@ header nav ul li a {
 
 /* landing End */
 /* feature  */
+.feature h2::after{
+content: "";
+position: absolute;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--glod-color);
+    bottom: -20%;
+    left: 0;
+
+} 
 .feature .coll {
     padding: 20px 20px 20px 0;
 }
@@ -314,6 +329,21 @@ header nav ul li a {
 
 /* feature End*/
 /* category */
+
+.category h2::after{
+content: "";
+position: absolute;
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 5px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--glod-color);
+    bottom: -20%;
+    left: 0;
+
+} 
 .category h2 {
     padding: 25px 0 0;
 }
@@ -338,11 +368,12 @@ header nav ul li a {
 .category .cat a:nth-child(3) {
     background-image: url("/imgs/927d76f03bad51ec57b31b7361df0eca.jpg");
     background-size: 400px;
-    height: 200px;
+    height: 350px;
     border-radius: 15px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 250px;
+    width: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,3 +403,121 @@ header nav ul li a {
 }
 
 /* category End */
+/* best sailes */
+.salls h2{
+    padding: 25px 0 ;
+        font-size: 28px;
+}
+.salls h2::after{
+content: "";
+position: absolute;
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 5px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--glod-color);
+    bottom: 20%;
+    left: 0;
+
+}
+.salls .box img {
+    border-radius: 19px 19px 0 0;
+}
+
+.salla .box .box-info {
+    padding: 10px;
+}
+
+.salls .box .box-info span {
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--glod-color);
+}
+
+.salls .box .box-info em {
+    color: black;
+    padding-left: 20px;
+}
+
+.salls .box .box-info .bay {
+    background-color: var(--glod-color);
+    color: var(--main-Color);
+    padding: 8px 40px;
+    border: 1px solid #DDD;
+    border-radius: 22px;
+    font-size: 20px;
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+/* best sailes End */
+/* testimoneal  */
+.testimoneal h2{
+    padding: 25px 0 ;
+    font-size: 28px;
+}
+
+.testimoneal  h2::after{
+content: "";
+position: absolute;
+    content: "";
+    position: absolute;
+    width: 11%;
+    height: 5px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--glod-color);
+    bottom: 20%;
+    left: 0;
+} 
+
+.testimoneal .test-box{
+    width: 100%;
+    border: 1px solid #f3f2f2;
+    border-radius: 15px;
+    direction: rtl;
+}
+.testimoneal .test-box .info{
+display: flex;
+flex-wrap: wrap;
+}
+.testimoneal .test-box img{
+    width: 70px;
+    padding-left: 15px;
+}
+/* testimoneal End*/
+/* footer */
+footer{
+  padding: 20px;  
+  background-color: var(--glod-color);
+} 
+footer.containar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+footer .containar > .contact{
+    display: flex;
+    align-items: center;
+}
+@media(max-width:767px){
+    footer .containar .contact ul {
+        flex-direction: column;
+    }
+}
+footer .containar ul li{
+    padding: 10px;
+    color: var(--main-Color);
+}
+footer .containar .contact span a{
+    text-align: center;
+}
+
+/* footer End  */
