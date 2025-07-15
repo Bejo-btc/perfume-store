@@ -7,46 +7,41 @@
     <meta name="Keyword" content="">
     <meta name="Discription" content="Abo-Shama website">
     <meta name="author" content="mustafa haider">
-    <!-- My freamwork -->
-    <link rel="stylesheet" href="css/freamwork.css">
+
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css">
     <!-- render all elements normaly -->
     <link rel="stylesheet" href="css/normlize.css">
     <!-- icons file -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Playwrite+DK+Loopet:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Abo-Shama</title>
 </head>
+<!-- <i class="fa-solid fa-bars"></i> -->
 
 <body>
     <!-- header -->
     <header class="p-rleative">
-        <div class="containar between-flex">
-            <div>
-                <nav class="p-abs bg-white">
-                    <ul class="d-block">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Men section</a></li>
-                        <li> <a href="#">wemen section</a> </li>
-                        <li> <a href="#">Top Perfumes</a> </li>
-                        <li> <a href="#">Contact us</a> </li>
-                        <li> <a href="#">Order A Delivary</a> </li>
-                    </ul>
-                    <div class="contact">
-                        <h2 class="mb-10">contact us</h2>
-                        <ul>
-                            <li><i>ic</i> Phone:0969929157</li>
-                            <li><i>ic</i> Whatsapp:091234567</li>
-                            <li><i>ic</i>feacbook:</li>
-                        </ul>
-                    </div>
-                </nav>
-                <i class="fas-solid fa-bars c-gold toggle"></i>
-                <img src="imgs//freepik__watches-store-logo-with-the-color-291108-make-it-c__9783.png" alt="logo">
+        <nav class="navbar bg-body-tertiary px-0">
+            <div class="container">
+                <a class="navbar-brand logo fw-bolder ">Abo Shama</a>
+                <div class="position-relative">
+                    <form class="d-flex " role="search">
+                        <input class="form-control me-2 position-relative" type="search" placeholder="ابحث عن عطرك"
+                            aria-label="Search" />
+                        <i
+                            class="fa-solid fa-magnifying-glass d-flex justify-content-center align-items-center p-1  "></i>
+                    </form>
+                </div>
             </div>
-            <div class="icons">
-                <input type="search" placeholder="ابحث عن عطرك">
-            </div>
+        </nav>
         </div>
     </header>
     <!-- header  End  -->
@@ -54,10 +49,10 @@
     <div class="landing p-rleative">
         <div class="containar">
             <div class="info">
-                <h1 class="m c-white">ABO SHAMA FRAGRENCES</h1>
-                <p class="mt-10 c-white"> BODY SPLASH</p>
-                <p class="mt-10 c-white"> long listing & stable</p>
-                <p class="mt-10 c-white">200ML </p>
+                <h1 class=" text-white">ABO SHAMA FRAGRENCES</h1>
+                <p class="text-white fs-1"> BODY SPLASH</p>
+                <p class="text-white fs-1"> long listing & stable</p>
+                <p class="text-white fs-1">200ML </p>
             </div>
         </div>
     </div>
@@ -65,67 +60,109 @@
     <!-- feature -->
     <div class="feature">
         <div class="containar">
-            <div class="coll between-flex ">
-                <h2 class="p-relative">See Collection</h2>
-                <a class="c-gold" href="#">view all</a>
+            <div class="coll d-flex justify-content-between ">
+                <h2 class="position-relative">See Collection</h2>
+                <a class="one text-black" href="#">view all</a>
             </div>
-            <ul class="d-flex pb-10 mb-20">
-                <li><a class="active" href="#">All</a></li>
-                <li><a href="#">For Men</a></li>
-                <li><a href="#">For Wemen</a></li>
-                <li><a href="#">TRINDS</a></li>
+            <ul class="d-flex align-items-center   mb-sm-4">
+                <li><a class="active " href="#">All</a></li>
+                <li><a class="" href="#">For Men</a></li>
+                <li><a class="" href="#">For Wemen</a></li>
+                <li><a class="" href="#">TRINDS</a></li>
             </ul>
-            <div class="wrapper grid-col">
-                <div class="box">
-                    <img class="w-100" src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" alt="item-img">
-                    <div class="box-info">
-                        <h3>kred</h3>
-                        <span>$18.500 <em>30ml</em></span>
-                        <span>$54.000 <em>55ml</em></span>
-                        <a class="bay" href="#">شراء</a>
+            <div class="row">
+                <div class="g-col-3 ">
+                    <div class="card rounded-3 " style="width: 18rem;">
+                        <img src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" class="card-img-top" alt="...">
+                        <div class="card " style="width: 18rem;">
+                            <div class="card-body  pb-1">
+                                <h5 class="card-title">KRED</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-4">Men Fragnace </h6>
+                                <div class="price mb-2 d-flex justify-content-between align-items-center">
+                                    <span class=" f-3 fw-bolder width-100">$18.500</span>
+                                    <a href="#" class="btn fw-bold ">Add to card </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <img class="w-100" src="imgs/e961866271da6761c9dd3792d8ce291e.jpg" alt="item-img">
-                    <div class="box-info">
-                        <h3>Idel</h3>
-                        <span>$18.500 <em>30ml</em></span>
-                        <span>$54.000 <em>55ml</em></span>
-                        <a class="bay" href="#">شراء</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img class="w-100" src="imgs/fa261d53c1c99007fcbe35920d06cf4f.jpg" alt="item-img">
-                    <div class="box-info">
-                        <h3>imagination</h3>
-                        <span>$18.500 <em>30ml</em></span>
-                        <span>$54.000 <em>55ml</em></span>
-                        <a class="bay" href="#">شراء</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img class="w-100" src="imgs/IMG-20250706-WA0015.jpg" alt="item-img">
-                    <div class="box-info">
-                        <h3>T.F</h3>
-                        <span>$18.500 <em>30ml</em></span>
-                        <span>$54.000 <em>55ml</em></span>
-                        <a class="bay" href="#">شراء</a>
+                    <div class="card rounded-3 " style="width: 18rem;">
+                        <img src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" class="card-img-top" alt="...">
+                        <div class="card " style="width: 18rem;">
+                            <div class="card-body  pb-1">
+                                <h5 class="card-title">KRED</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-4">Men Fragnace </h6>
+                                <div class="price mb-2 d-flex justify-content-between align-items-center">
+                                    <span class=" f-3 fw-bolder width-100">$18.500</span>
+                                    <a href="#" class="btn fw-bold ">Add </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="card rounded-3 " style="width: 18rem;">
+                        <img src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" class="card-img-top" alt="...">
+                        <div class="card " style="width: 18rem;">
+                            <div class="card-body  pb-1">
+                                <h5 class="card-title">KRED</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-4">Men Fragnace </h6>
+                                <div class="price mb-2 d-flex justify-content-between align-items-center">
+                                    <span class=" f-3 fw-bolder width-100">$18.500</span>
+                                    <a href="#" class="btn fw-bold ">Add </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="card rounded-3 " style="width: 18rem;">
+                        <img src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" class="card-img-top" alt="...">
+                        <div class="card " style="width: 18rem;">
+                            <div class="card-body  pb-1">
+                                <h5 class="card-title">KRED</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-4">Men Fragnace </h6>
+                                <div class="price mb-2 d-flex justify-content-between align-items-center">
+                                    <span class="f-3 fw-bolder width-100">$18.500</span>
+                                    <a href="#" class="btn fw-bold ">Add </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
     </div>
     <!-- feature End -->
     <!-- catogory -->
-    <div class="category ">
+    <div class="category">
         <div class="containar">
-            <h2 class="p-relative">Shop by category</h2>
-            <div class="cat between-flex p-20 .p-relative">
-                <a href="#">For Men</a>
-                <a href="#">For Wemen</a>
-                <a href="#"> Air spray</a>
+            <h2 class="p-relative">Men category</h2>
+            <div class="wrapper grid-col">
+              <div class="card rounded-3 " style="width: 18rem;">
+                        <img src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" class="card-img-top" alt="...">
+                        <div class="card " style="width: 18rem;">
+                            <div class="card-body  pb-1">
+                                <h5 class="card-title">KRED</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-4">Men Fragnace </h6>
+                                <div class="price mb-2 d-flex justify-content-between align-items-center">
+                                    <span class="f-3 fw-bolder width-100">$18.500</span>
+                                    <a href="#" class="btn fw-bold ">Add </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             <div class="card rounded-3 " style="width: 18rem;">
+                        <img src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" class="card-img-top" alt="...">
+                        <div class="card " style="width: 18rem;">
+                            <div class="card-body  pb-1">
+                                <h5 class="card-title">KRED</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary mb-4">Men Fragnace </h6>
+                                <div class="price mb-2 d-flex justify-content-between align-items-center">
+                                    <span class="f-3 fw-bolder width-100">$18.500</span>
+                                    <a href="#" class="btn fw-bold ">Add </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
-
         </div>
     </div>
     <!-- catogrory End-->
@@ -133,17 +170,6 @@
     <div class="salls pb-10">
         <div class="containar">
             <h2 class="p-relative">Best Sails</h2>
-            <div class="wrapper grid-col">
-                <div class="box">
-                    <img class="w-100" src="imgs/file_0000000065a86243b5fa739c6e1798a2.png" alt="item-img">
-                    <div class="box-info">
-                        <h3>kred</h3>
-                        <span>$18.500 <em>30ml</em></span>
-                        <span>$54.000 <em>55ml</em></span>
-                        <a class="bay" href="#">شراء</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Best sails End -->
@@ -151,64 +177,7 @@
     <div class="testimoneal pb-30">
         <div class="containar">
             <h2 class="p-relative">customers experience</h2>
-            <div class="wrappers grid-col">
-                <div class="test-box p-10">
-                    <div class="info mb-10">
-                        <img class="w-100 rad-50" src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" alt="">
-                        <div>
-                            <h3 class="mb-10">محمد علي</h3>
-                            <span class="d-block ">9/7/2025</span>
-                        </div>
-
-                    </div>
-                    <p class="l-h d-block w-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit,
-                        facilis amet sit
-                        nobis quibusdam
-                        necessitatibus cum omnis fuga aperiam facere, molestias modi mollitia similique.
-                    </p>
-                </div>
-                <div class="test-box p-10">
-                    <div class="info mb-10">
-                        <img class="w-100 rad-50" src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" alt="">
-                        <div>
-                            <h3 class="mb-5">ايهاب السر</h3>
-                            <span class="d-block ">9/7/2025</span>
-                        </div>
-
-                    </div>
-                    <p class="l-h">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, facilis amet sit
-                        nobis quibusdam
-                        necessitatibus cum omnis fuga aperiam facere, molestias modi mollitia similique.
-                    </p>
-                </div>
-                <div class="test-box p-10">
-                    <div class="info mb-10">
-                        <img class="w-100 rad-50" src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" alt="">
-                        <div>
-                            <h3 class="mb-5">خالد بشير</h3>
-                            <span class="d-block ">9/7/2025</span>
-                        </div>
-
-                    </div>
-                    <p class="l-h">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, facilis amet sit
-                        nobis quibusdam
-                        necessitatibus cum omnis fuga aperiam facere, molestias modi mollitia similique.
-                    </p>
-                </div>
-                <div class="test-box p-10">
-                    <div class="info mb-10">
-                        <img class="w-100 rad-50" src="imgs/927d76f03bad51ec57b31b7361df0eca.jpg" alt="">
-                        <div>
-                            <h3 class="mb-5">سليمان طه</h3>
-                            <span class="d-block ">9/7/2025</span>
-                        </div>
-
-                    </div>
-                    <p class="l-h">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, facilis amet sit
-                        nobis quibusdam
-                        necessitatibus cum omnis fuga aperiam facere, molestias modi mollitia similique.
-                    </p>
-                </div>
+      
             </div>
         </div>
     </div>
@@ -222,9 +191,9 @@
             <div class="contact d-flex">
                 <h2>contact us:</h2>
                 <ul class="d-flex">
-                    <li><i>ic</i> Phone:0969929157</li>
-                    <li><i>ic</i> Whatsapp:091234567</li>
-                    <li><i>ic</i>feacbook:</li>
+                    <li><i></i> Phone: 0969929157</li>
+                    <li><i></i> Whatsapp: 091234567</li>
+                    <li><i></i>feacbook:</li>
                 </ul>
             </div>
         </div>
